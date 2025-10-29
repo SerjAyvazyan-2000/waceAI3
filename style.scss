@@ -81,6 +81,7 @@
 @include font-face("inter", "Inter-Regular", 400, normal);
 
 
+
 /* Reset and base styles  */
 * {
 	padding: 0px;
@@ -434,9 +435,9 @@ body{
 }
 
 .section{
-    padding: 60px 0;
+    margin: 60px 0;
     @include small-tablet(){
-        padding: 50px 0;
+        margin: 50px 0;
     }
 }
 .container {
@@ -633,10 +634,10 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
     z-index: 5;
     @include small-tablet(){
-        margin-top: 14px;
+        padding-top: 14px;
     }
     &__container{
 
@@ -697,8 +698,8 @@ a{
 }
 
 .primary {
-    padding-top: 140px;
     margin: 0 20px;
+    padding-top: 140px;
     position: relative;
     overflow: hidden;
     @include tablet(){
@@ -960,9 +961,9 @@ a{
 
 
 .possible {
-    padding-top: 120px;
+    margin-top: 120px;
     @include small-tablet(){
-        padding-top: 100px;
+        margin-top: 100px;
     }
     &__container {
     }
@@ -1104,9 +1105,6 @@ a{
     &__desc {
         text-align: left;
         margin-bottom: 40px;
-        @include small-mobile(){
-            max-width: 276px;
-        }
     }
 
     &__button {
@@ -1122,6 +1120,7 @@ a{
     }
 
     &__header {
+        margin-bottom: 20px;
     }
 
     &__bubble {
@@ -1346,8 +1345,6 @@ a{
         }
         @include mobile(){
             border-radius: 20px;
-            max-width: 332px;
-            margin: 0px auto;
         }
     }
 }
@@ -1413,7 +1410,7 @@ a{
         &:hover{
             animation-play-state: paused;
         }
-        @include small-mobile(){
+        @include small-tablet(){
             &:not(:last-child) {margin-bottom: 10px;};
         }
     }
@@ -1424,7 +1421,7 @@ a{
         align-items: center;
         gap: 20px;
         margin-right: 20px;
-        @include small-mobile(){
+        @include small-tablet(){
             gap: 10px;
             margin-right: 10px;
         }
@@ -1450,7 +1447,7 @@ a{
         align-items: flex-start;
         margin-bottom: 20px;
         position: relative;
-        @include small-mobile(){
+        @include small-tablet(){
             margin-bottom: 12px;
         }
     }
@@ -1459,7 +1456,7 @@ a{
         display: inline-grid;
         grid-template: auto auto / auto 1fr;
         column-gap: 16px;
-        @include small-mobile(){
+        @include small-tablet(){
             column-gap: 12px;
         }
     }
@@ -1468,7 +1465,7 @@ a{
         text-align: center;
         align-self: center;
         grid-row: span 2;
-        @include small-mobile(){
+        @include small-tablet(){
             width: 52px;
         }
     }
@@ -1481,7 +1478,7 @@ a{
         font-size: #{fluid(14px, 16px, 375px, 1440px)};
         padding-bottom: 8px;
         text-align: left;
-        @include small-mobile(){
+        @include small-tablet(){
             padding-bottom: 0;
         }
     }
@@ -1505,7 +1502,7 @@ a{
     &__desc {
         margin-bottom: 32px;
         font-size: #{fluid(16px, 18px, 375px, 1440px)};
-        @include small-mobile(){
+        @include small-tablet(){
             margin-bottom: 30px;
         }
     }
@@ -1667,6 +1664,8 @@ a{
 
 .try {
     padding-bottom: 0;
+    max-width: 1400px;
+    margin: 0px auto;
     &__body {
         background-color: var(--bg-card);
         border-radius: 36px 36px 0 0;
