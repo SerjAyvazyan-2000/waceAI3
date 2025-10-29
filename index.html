@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wace-AI</title>
+
+    <link rel="preload" href="/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="/css/style.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header fade-top">
+            <div class="header__container container">
+                <div class="header__body">
+                    <a href="#" class="header__logo logo">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#possible" class="header__link menu-list-link">Возможности</a></li>
+                            <li class="header__item"><a href="#work" class="header__link menu-list-link">Как работает</a></li>
+                            <li class="header__item"><a href="#review" class="header__link menu-list-link">Отзывы</a></li>
+                            <li class="header__item"><a href="#faq" class="header__link menu-list-link">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__button btn btn-reset">
+                        <div class="arrow"></div>
+                        Регистрация <span>бесплатно</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="primary">
+                <div class="primary__container container">
+                    <div class="primary__body fade-top">
+                        <div class="primary__bubble bubble">
+                            <div class="star"></div>
+                            Wace AI
+                        </div>
+                        <h1 class="primary__title">Изображайте <br> <span>невообразимое</span></h1>
+                        <p class="primary__text">Нейросеть для генерации и редактирования изображений онлайн</p>
+                        <a href="#" class="primary__button btn-second btn">
+                            <div class="arrow"></div>
+                            Начать бесплатно
+                        </a>
+                    </div>
+                    <div class="primary__wrapper ">
+                        <div id="primary-tab-1" class="primary__swiper primary__swiper-1 swiper hide fade-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/09.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/10.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/11.webp" alt="img" width="255" height="279" >
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/12.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/13.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/14.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/15.webp" alt="img" width="255" height="279" >
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/16.webp" alt="img" width="255" height="279" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="primary__swiper-controls"></div>
+                        </div>
+                        <div id="primary-tab-2" class="primary__swiper primary__swiper-2 swiper fade-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/01.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/02.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/03.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/04.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/05.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/06.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/07.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/08.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="primary__swiper-controls"></div>
+                        </div>
+                        <div id="primary-tab-3" class="primary__swiper primary__swiper-3 swiper hide fade-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/25.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/26.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/27.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/28.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/29.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/30.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/31.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/32.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="primary__swiper-controls"></div>
+                        </div>
+                        <div id="primary-tab-4" class="primary__swiper primary__swiper-4 swiper hide fade-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/17.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/18.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/19.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/20.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/21.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/22.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/23.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/24.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="primary__swiper-controls"></div>
+                        </div>
+                        <div id="primary-tab-5" class="primary__swiper primary__swiper-5 swiper hide fade-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/33.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/34.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/35.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/36.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="primary__image">
+                                        <img src="img/preview/37.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/38.webp" alt="img" width="255" height="279">
+                                    </div>
+                                    <div class="primary__image">
+                                        <img src="img/preview/39.webp" alt="img" width="255" height="279">
+                                    </div>
+    
+                                    <div class="primary__image">
+                                        <img src="img/preview/40.webp" alt="img" width="255" height="279">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="primary__swiper-controls"></div>
+                        </div>
+                        <div class="primary__tab-controls">
+                            <button data-tab="primary-tab-1" class="primary__tab-button btn btn-reset">Креатив</button>
+                            <button data-tab="primary-tab-2" class="primary__tab-button active btn btn-reset">Реализм</button>
+                            <button data-tab="primary-tab-3" class="primary__tab-button btn btn-reset">Макро</button>
+                            <button data-tab="primary-tab-4" class="primary__tab-button btn btn-reset">В движении</button>
+                            <button data-tab="primary-tab-5" class="primary__tab-button btn btn-reset">Иллюстрация</button>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="horse horse-1 fade-left">
+                        <img src="img/horse1.png" alt="img" width="250" heigth="250">
+                    </div>
+                    <div class="horse horse-2 fade-right">
+                        <img src="img/horse2.png" alt="img" width="330" heigth="330">
+                    </div>
+                    <div class="banan banan-1 fade-left">
+                        <img src="img/banan1.webp" alt="img" width="616" heigth="474" >
+                    </div>
+                    <div class="banan banan-2 fade-right">
+                        <img src="img/banan2.webp" alt="img" fetchpriority="high" width="388" height="414" loading="eager" >
+                    </div>
+                </div>
+            </section>
+            <section id="possible" class="possible section">
+                <div class="possible__container container">
+                    <div class="possible__header section-header fade-top">
+                        <div class="possible__bubble bubble">Возможности</div>
+                        <h2 class="possible__title title">Создавайте, редактируйте</h2>
+                        <p class="possible__text">Всё, что нужно для работы с изображениями, теперь в одном чате</p>
+                    </div>
+                    <div class="possible__body fade-bottom">
+                        <div class="possible__column possible__column-1 fade-left">
+                            <div class="possible__image">
+                                <picture>
+                                    <source srcset="img/possibilities/01-mobile.png" media="(max-width: 576px)" />
+                                    <img src="img/possibilities/01.webp" alt="img" width="" heigth="" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="possible__info">
+                                <h3 class="possible__subtitle subtitle"><span><img src="img/icons/possible01.png" alt="img"> Создание</span> изображений</h3>
+                                <p class="possible__desc desc">Нейросеть рисует <span>картинки с нуля</span> по вашему описанию. Просто напишите, что хотите увидеть, и получите готовое изображение</p>
+                                <a href="#" class="possible__button btn">
+                                    <div class="arrow"></div>
+                                    Cоздать бесплатно
+                                </a>
+                            </div>
+                        </div>
+                        <div class="possible__column possible__column-2 fade-right">                
+                            <div class="possible__info">
+                                <h3 class="possible__subtitle subtitle"><span><img src="img/icons/possible02.png" alt="img"> Объединение</span> изображений</h3>
+                                <p class="possible__desc desc">Можно соединить несколько картинок в одну: нейросеть создаст <span>цельный результат</span> по вашему промпту за мгновения</p>
+                                <a href="#" class="possible__button btn">
+                                    <div class="arrow"></div>
+                                    Объединить бесплатно
+                                </a>
+                            </div>
+                             <div class="possible__image">
+                                <img src="img/possibilities/02-small.png" class="small" alt="img" width="" heigth="" loading="lazy">
+                                <picture>
+                                    <source srcset="img/possibilities/02-mobile.png" media="(max-width: 576px)" />
+                                    <img src="img/possibilities/02.webp" alt="img" width="" heigth="" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="possible__column possible__column-3 fade-left">
+                            <div class="possible__image">
+                                <img src="img/possibilities/03.webp" alt="img" width="" heigth="" loading="lazy">
+                                <img src="img/possibilities/03-small.webp" class="small" alt="img" width="" heigth="" loading="lazy">
+                            </div>
+                            <div class="possible__info">
+                                <h3 class="possible__subtitle subtitle"><span><img src="img/icons/possible03.png" alt="img"> Улучшение</span> качества</h3>
+                                <p class="possible__desc desc">Повышает чёткость и <span>детализацию</span> картинки, убирает шум и делает изображение более ярким, сохраняя исходные элементы</p>
+                                <a href="#" class="possible__button btn">
+                                    <div class="arrow"></div>
+                                    Улучшить бесплатно
+                                </a>
+                            </div>
+                        </div>
+                        <div class="possible__column possible__column-4 fade-right">                
+                            <div class="possible__info">
+                                <h3 class="possible__subtitle subtitle"><span><img src="img/icons/possible04.png" alt="img"> Изменение</span> фото</h3>
+                                <p class="possible__desc desc">Загрузите картинку и укажите, что нужно поменять — цвет, фон, <span>детали</span> изображения или его общий стиль</p>
+                                <a href="#" class="possible__button btn">
+                                    <div class="arrow"></div>
+                                    Изменить бесплатно
+                                </a>
+                            </div>
+                             <div class="possible__image">
+                                <img src="img/possibilities/04.webp" alt="img" width="" heigth="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="possible__column possible__column-5 fade-left">
+                            <div class="possible__image">
+                                <img src="img/possibilities/05-small1.webp" class="small small1" alt="img" width="" heigth="" loading="lazy">
+                                <img src="img/possibilities/05-small2.webp" class="small small2" alt="img" width="" heigth="" loading="lazy">
+                                 <picture>
+                                    <source srcset="img/possibilities/05-mobile.webp" media="(max-width: 576px)" />
+                                    <img src="img/possibilities/05.webp" alt="img" width="" heigth="" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="possible__info">
+                                <h3 class="possible__subtitle subtitle"><span><img src="img/icons/possible05.png" alt="img"> Создание</span> аналогов</h3>
+                                <p class="possible__desc desc">Хотите похожие варианты? Создайте несколько изображений <span>в том же стиле</span> или с теми же деталями, что и оригинал</p>
+                                <a href="#" class="possible__button btn">
+                                    <div class="arrow"></div>
+                                    Создать бесплатно
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="work section">
+                <div class="work__container container">
+                    <div class="work__header section-header fade-top">
+                        <div class="work__bubble bubble">Как работает</div>
+                        <h2 class="work__title title">3 шага, <span class="span-1">чтобы начать работу</span> <span class="span-2">до старта</span></h2>
+                        <p class="work__text text">Опишите задачу и наблюдайте, <br> как она воплощается в жизнь</p>
+                    </div>
+                    <div class="work__swiper swiper fade-bottom">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide work__column">
+                                <h3 class="work__subtitle subtitle"><img src="img/icons/work01.png" alt="img">Быстрая регистрация</h3>
+                                <p class="work__desc desc">Создайте аккаунт <span>за 30 секунд.</span> Никаких сложных форм</p>
+                                <div class="work__image work__image-1">
+                                    <img src="img/work/01.png" alt="img" width="" heigth="" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide work__column work__column-reverse">
+                                <p class="work__desc desc">Напишите простыми словами, что нужно <span>создать или улучшить</span></p>
+                               <h3 class="work__subtitle subtitle"><img src="img/icons/work02.png" alt="img">Описание задачи</h3>
+                                <div class="work__image work__image-2">
+                                    <img src="img/work/02.png" alt="img" width="" heigth="" loading="lazy">
+                                    <div class="message message-1">«Красивая девушка сидит за ноутбуком и работает как программист»</div>
+                                    <div class="message message-2">«Кот-робот доставляет пиццу до дома хозяина, <br> киберпанк, ультрареализм»</div>
+                                    <div class="message message-3">«Три мужчины переодеты в современных богатырей, сидят на лошадях»</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide work__column">
+                                <h3 class="work__subtitle subtitle"><img src="img/icons/work03.png" alt="img">Готовый результат</h3>
+                                <p class="work__desc work__desc-desktop desc" style="max-width: unset;">Контент готов к использованию. <br> <span>Сохраняйте картинку</span> и радуйтесь жизни!</p>
+                                <p class="work__desc work__desc-mobile desc" style="max-width: unset;">Контент готов к использованию. <br> <span>Копируйте текст</span> и радуйтесь жизни!</p>
+                                <div class="work__image work__image-3">
+                                    <img src="img/work/03.png" alt="img" width="" heigth="" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__pagination"></div>
+                    </div>
+                    <a href="#" class="work__button btn-third btn">
+                        <div class="arrow"></div>
+                        Бесплатная регистрация
+                    </a>
+                </div>
+            </section>
+            <section class="universal section">
+                <div class="universal__container container">
+                    <div class="universal__header section-header fade-top">
+                        <div class="universal__bubble bubble">Универсальный инструмент</div>
+                        <div class="universal__bubble universal__bubble-mobile bubble">Кому подойдёт</div>
+                        <h2 class="universal__title title">Делать как профи — просто</h2>
+                        <p class="universal__text text">Нейросеть, работающая с изображениями <br> на профессиональном уровне</p>
+                    </div>
+                    <div class="universal__image fade-bottom">
+                        <picture>
+                            <source srcset="img/universal-mobile.webp" media="(max-width: 576px)" />
+                            <img src="img/universal.webp" alt="img" width="" heigth="" loading="lazy">
+                        </pictu>
+                    </div>
+                </div>
+            </section>
+            <section id="review" class="section review">
+                <div class="review__container container">
+                    <div class="review__header section-header fade-top">
+                        <div class="review__bubble bubble">Отзывы</div>
+                        <h2 class="review__title title">Реальные результаты</h2>
+                        <p class="review__text text">Убедитесь в эффективности нейросети <br> на примерах наших пользователей</p>
+                    </div>
+                    <div class="review__list review__list-1 ">
+                        <div class="review__copy">
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/01.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Леонид О.</h4>
+                                        <p class="review__job">Основатель стартапа</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Wace AI заменил нам копирайтера и дизайнера на старте продукта. Экономим 40 000 ₽ в месяц, контент — профессиональный</div>
+                                <div class="review__data">25 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/02.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">София Н.</h4>
+                                        <p class="review__job">Менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">С помощью Wace AI делаем презентации для инвесторов — визуалы чистые, стильные, без багов</div>
+                                <div class="review__data">29 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/03.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Иван Г.</h4>
+                                        <p class="review__job">SMM</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Теперь даже посты в соцсетях выглядят дорого. Нейросеть идеально подстраивается под стиль бренда</div>
+                                <div class="review__data">30 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/04.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Мария П.</h4>
+                                        <p class="review__job">Продакт-менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Генерация картинок реально спасает, когда нет бюджета на иллюстратора. Качество — топ, лучше не найти</div>
+                                <div class="review__data">25 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/05.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Ольга Л.</h4>
+                                        <p class="review__job">E-commerce менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Используем Wace AI для карточек товаров. Фото выглядят реалистично, CTR вырос в полтора раза. Класс?</div>
+                                <div class="review__data">02 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/06.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Максим О.</h4>
+                                        <p class="review__job">Дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Генерирую уникальные иллюстрации для проектов за секунды. Это экономит мне 3–4 часа работы ежедневно</div>
+                                <div class="review__data">07 окт. 2025</div>
+                            </div>
+                        </div>
+                        <div class="review__copy">
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/01.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Леонид О.</h4>
+                                        <p class="review__job">Основатель стартапа</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Wace AI заменил нам копирайтера и дизайнера на старте продукта. Экономим 40 000 ₽ в месяц, контент — профессиональный</div>
+                                <div class="review__data">25 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/02.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">София Н.</h4>
+                                        <p class="review__job">Менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">С помощью Wace AI делаем презентации для инвесторов — визуалы чистые, стильные, без багов</div>
+                                <div class="review__data">29 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/03.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Иван Г.</h4>
+                                        <p class="review__job">SMM</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Теперь даже посты в соцсетях выглядят дорого. Нейросеть идеально подстраивается под стиль бренда</div>
+                                <div class="review__data">30 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/04.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Мария П.</h4>
+                                        <p class="review__job">Продакт-менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Генерация картинок реально спасает, когда нет бюджета на иллюстратора. Качество — топ, лучше не найти</div>
+                                <div class="review__data">25 сен. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/05.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Ольга Л.</h4>
+                                        <p class="review__job">E-commerce менеджер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Используем Wace AI для карточек товаров. Фото выглядят реалистично, CTR вырос в полтора раза. Класс?</div>
+                                <div class="review__data">02 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/06.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Максим О.</h4>
+                                        <p class="review__job">Дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Генерирую уникальные иллюстрации для проектов за секунды. Это экономит мне 3–4 часа работы ежедневно</div>
+                                <div class="review__data">07 окт. 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__list review__list-2">
+                        <div class="review__copy">
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/07.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Кирилл М.</h4>
+                                        <p class="review__job">Маркетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Раньше тратили часы на брифы для дизайнеров, теперь просто описываем идею, и Wace AI делает визуалы сам</div>
+                                <div class="review__data">07 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/08.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Алина Н.</h4>
+                                        <p class="review__job">Таргетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Делаю креативы для рекламы за 10 минут вместо дня работы. Картинки выглядят как из агентства, просто шик</div>
+                                <div class="review__data">09 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/09.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Денис Ш.</h4>
+                                        <p class="review__job">Фрилансер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Беру в 2 раза больше заказов благодаря Wace AI. Теперь успеваю выполнять срочные проекты без потери качества</div>
+                                <div class="review__data">10 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/10.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Анна П.</h4>
+                                        <p class="review__job">Маркетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">За месяц с Wace AI наш охват в соцсетях вырос на 40%. Теперь вся команда использует нейросеть для повседневных задач</div>
+                                <div class="review__data">10 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/11.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Лев А.</h4>
+                                        <p class="review__job">Дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">За пару минут делаю баннеры для рекламы. Клиенты думают, что это ручная работа дизайнера.</div>
+                                <div class="review__data">12 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/12.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Артём Н.</h4>
+                                        <p class="review__job">Креативный директор</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Удивило, как точно нейросеть понимает стиль изображения. Подходит и для брендинга, и для контента. Рекомендую</div>
+                                <div class="review__data">13 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/12.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Виктория Д.</h4>
+                                        <p class="review__job">Fashion-дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Использую Wace AI для мудбордов и референсов — визуалы получаются на уровне Behance, что просто супер</div>
+                                <div class="review__data">13 окт. 2025</div>
+                            </div>
+                        </div>
+                        <div class="review__copy">
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/07.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Кирилл М.</h4>
+                                        <p class="review__job">Маркетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Раньше тратили часы на брифы для дизайнеров, теперь просто описываем идею, и Wace AI делает визуалы сам</div>
+                                <div class="review__data">07 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/08.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Алина Н.</h4>
+                                        <p class="review__job">Таргетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Делаю креативы для рекламы за 10 минут вместо дня работы. Картинки выглядят как из агентства, просто шик</div>
+                                <div class="review__data">09 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/09.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Денис Ш.</h4>
+                                        <p class="review__job">Фрилансер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Беру в 2 раза больше заказов благодаря Wace AI. Теперь успеваю выполнять срочные проекты без потери качества</div>
+                                <div class="review__data">10 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/10.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Анна П.</h4>
+                                        <p class="review__job">Маркетолог</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">За месяц с Wace AI наш охват в соцсетях вырос на 40%. Теперь вся команда использует нейросеть для повседневных задач</div>
+                                <div class="review__data">10 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/11.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Лев А.</h4>
+                                        <p class="review__job">Дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">За пару минут делаю баннеры для рекламы. Клиенты думают, что это ручная работа дизайнера.</div>
+                                <div class="review__data">12 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/12.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Артём Н.</h4>
+                                        <p class="review__job">Креативный директор</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Удивило, как точно нейросеть понимает стиль изображения. Подходит и для брендинга, и для контента. Рекомендую</div>
+                                <div class="review__data">13 окт. 2025</div>
+                            </div>
+                            <div class="review__column">
+                                <div class="review__top">
+                                    <div class="review__item">
+                                        <div class="review__icon">
+                                            <img src="img/reviews/12.png" alt="img" width="" heigth="" loading="lazy">
+                                        </div>
+                                        <h4 class="review__name subtitle">Виктория Д.</h4>
+                                        <p class="review__job">Fashion-дизайнер</p>
+                                    </div>
+                                    <div class="review__rating">5.0</div>
+                                </div>
+                                <div class="review__desc desc">Использую Wace AI для мудбордов и референсов — визуалы получаются на уровне Behance, что просто супер</div>
+                                <div class="review__data">13 окт. 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="faq section">
+                <div class="faq__container container">
+                    <div class="faq__header section-header fade-top">
+                        <div class="faq__bubble bubble">FAQ</div>
+                        <h2 class="faq__title title">Отвечаем на вопросы</h2>
+                        <p class="faq__text text">Мы собрали все, <span>что важно знать</span> <br> перед началом работы</p>
+                    </div>
+                    <div class="faq__columns fade-bottom">
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Что умеет Wace AI?</span>
+                                </div>
+                                <p>Wace AI создаёт, редактирует, объединяет и улучшает изображения по твоему описанию. Можно рисовать с нуля, менять детали или делать похожие варианты.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Нужно ли уметь работать с дизайном?</span>
+                                </div>
+                                <p>Нет. Всё работает на простых текстовых запросах — просто опиши, что хочешь получить, и нейросеть всё сделает сама.</p>
+                            </div>  
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Можно ли загрузить свою картинку?</span>
+                                </div>
+                                <p>Все права на сгенерированные тексты и изображения принадлежат вам — вы можете использовать их даже в коммерческих целях.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Какие изображения можно создавать?</span>
+                                </div>
+                                <p>Любые: реалистичные фото, иллюстрации, арт, баннеры, лого, фоны и многое другое. Всё зависит от твоего запроса.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Можно ли использовать для коммерции?</span>
+                                </div>
+                                <p>Да, изображения, созданные в Wace AI, можно использовать в рекламе, на сайтах, в презентациях и любом коммерческом контенте.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Что делать, если результат не понравился?</span>
+                                </div>
+                                <p>Просто уточните запрос или сгенерируй заново — нейросеть предложит другие варианты.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Работает ли Wace AI на телефоне?</span>
+                                </div>
+                                <p>Вы можете получать лучшие результаты, формулируя более чёткие и детализированные запросы, а также экспериментируя с различными стилями и форматами контента.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                        <div class="faq__column">
+                            <div class="faq__wrapper">
+                                <div class="faq__btn btn-reset">
+                                    <span class="faq__caption ">Мои данные защищены?</span>
+                                </div>
+                                <p>Все изображения и запросы обрабатываются безопасно — мы не передаём их третьим лицам и не используем для обучения моделей.</p>
+                            </div>
+                            <button type="button" class="faq__indicator" aria-label="Развернуть вопрос">
+                                 <span class="faq__icon" aria-hidden="true">+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="try section">
+                <div class="try__body fade-bottom">
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/01.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/02.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/03.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/04.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/05.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/06.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/07.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/08.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <a href="#" class="try__button btn">
+                        <div class="arrow"></div>
+                        Попоробовать самому
+                    </a>
+                </div>
+                <div class="try__body try__body-mobile">
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/05-mobile.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/04.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="try__column">
+                        <div class="try__image">
+                            <img src="img/try/02-mobile.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/01-mobile.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                        <div class="try__image">
+                            <img src="img/try/08.webp" alt="img" width="" heigth="" loading="lazy">
+                        </div>
+                    </div>
+                    <a href="#" class="try__button btn">
+                        <div class="arrow"></div>
+                        Начать бесплатно
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer fade-bottom">
+            <div class="footer__container container">
+                <div class="footer__body">
+                    <div class="footer__column">
+                        <a href="#" class="footer__logo logo">
+                        </a>
+                        <p class="footer__text">По всем вопросам, связанным с работой сервиса, вы можете связаться с нами по электронной почте: <a href="mailto:help@slidy.ai">help@slidy.ai</a></p>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__categorie">НАВИГАЦИЯ</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#possible" class="footer__link menu-list-link">Возможности</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#work" class="footer__link menu-list-link">Как работает</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#review" class="footer__link menu-list-link">Отзывы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#faq" class="footer__link menu-list-link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__categorie">ДОКУМЕНТЫ</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#possible" class="footer__link">Договор оферты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#work" class="footer__link">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copyright">© 2025 Wace AI. Все права защищены</div>
+                    <ul class="footer__socials">
+                        <li class="footer__social">
+                            <a href="#" class="footer__link">
+                                <img src="img/vk.svg" alt="img" width="" heigth="" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="#" class="footer__link">
+                                <img src="img/tg.svg" alt="img" width="" heigth="" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__text footer__text-mobile">По всем вопросам, связанным с работой сервиса, вы можете связаться с нами по электронной почте: <a href="mailto:help@slidy.ai">help@slidy.ai</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
