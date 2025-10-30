@@ -1436,6 +1436,7 @@ a:hover {
 .primary__wrapper .circle {
   background-color: var(--accent-color);
 }
+
 .primary__wrapper .circle {
   position: absolute;
   top: 30px;
