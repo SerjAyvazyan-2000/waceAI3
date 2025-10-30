@@ -308,7 +308,7 @@ footer .logo{
         display: block;
     }
     .work__image-2 img{
-        content: url('../img/work/02.png') !important;
+        content: url('../img/work/02.webp') !important;
         display: block;
     }
     .work__image-3 img{
@@ -562,7 +562,7 @@ a{
     display: block;
 }
 .work__image-2 img{
-    content: url('../img/work/02-light.png');
+    content: url('../img/work/02-light.webp');
     display: block;
 }
 .work__image-3 img{
@@ -1235,27 +1235,7 @@ a{
             .desc{
                 margin-bottom: 0;
             }
-            .message{
-                position: absolute;
-                background-color: var(--bg-card);
-                font-size: 12px;
-                font-weight: 500;
-                padding: 8px 12px;
-                max-width: 320px;
-                &-1{
-                    top: 25%;
-                    right: -120px;
-                }
-                &-2{
-                    top: 45%;
-                    left: 0;
-                    text-wrap: nowrap;
-                }
-                &-3{
-                    top: 65%;
-                    right: -120px;
-                }
-            }
+
         }
         @include tablet(){
             flex-shrink: 0;
@@ -1295,6 +1275,10 @@ a{
         margin: 0 20px;
         position: relative;
         overflow: hidden;
+        &-2{
+            width: 100%;
+            margin-right: -20px;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -1302,6 +1286,9 @@ a{
         }
         @include small-tablet(){
             margin: 0;
+            &-2{
+                margin-right: -23px;
+            }
         }
     }
 
@@ -1720,6 +1707,15 @@ a{
         &-mobile{
             display: none;
         }
+        &::after{
+            content:'';
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            background-color: var(--bg-card);
+            bottom: -30px;
+            left: 0;
+        }
         @include small-tablet(){
             background-color: unset;
             margin: 0;
@@ -1729,6 +1725,10 @@ a{
             &-mobile{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            }
+            &::after{
+                content:none;
+                
             }
         }
     }
@@ -1752,7 +1752,7 @@ a{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 100px;
+        bottom: 70px;
         min-height: 56px;
         background-color: var(--accent-color);
         z-index: 1;
@@ -1767,6 +1767,9 @@ a{
                 filter: brightness(0);
             }
         }
+        @include small-tablet(){
+            bottom: 90px;
+        }
     }
 }
 
@@ -1777,10 +1780,9 @@ a{
     border-radius: 20px;
     padding: 60px 0;
     margin: 0 20px;
-    margin-top: -20px;
     margin-bottom: 30px;
     @include small-tablet(){
-        margin: -30px 0 0 0;
+        margin: -10px 0 0 0;
         padding: 40px 0;
         border-radius: 30px 30px 0 0;
     }
