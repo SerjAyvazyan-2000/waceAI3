@@ -1140,6 +1140,10 @@ a:hover {
   min-height: 100%;
 }
 
+.footer__logo{
+  content: url('../img/logo.svg');
+}
+
 .footer__column:nth-child(1) {
   flex: 0 1 50%;
 }
