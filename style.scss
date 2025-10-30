@@ -310,10 +310,16 @@ footer .logo{
     .work__image-2 img{
         content: url('../img/work/02.webp') !important;
         display: block;
+        @include small-tablet(){
+            content: url('../img/work/02-m.webp') !important;
+        }
     }
     .work__image-3 img{
         content: url('../img/work/03.png') !important;
         display: block;
+        @include small-tablet(){
+            content: url('../img/work/03-m.webp') !important;
+        }
     }
     .review{
         &__container{
@@ -564,10 +570,16 @@ a{
 .work__image-2 img{
     content: url('../img/work/02-light.webp');
     display: block;
+     @include small-tablet(){
+        content: url('../img/work/02-light-m.webp');
+    }
 }
 .work__image-3 img{
     content: url('../img/work/03-light.png');
     display: block;
+    @include small-tablet(){
+        content: url('../img/work/03-light-m.webp');
+    }
 }
 .horse{
     position: absolute;
@@ -1287,7 +1299,7 @@ a{
         @include small-tablet(){
             margin: 0;
             &-2{
-                margin-right: -23px;
+                width: auto;
             }
         }
     }

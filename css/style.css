@@ -247,10 +247,24 @@ footer .logo {
     content: url("../img/work/02.webp") !important;
     display: block;
   }
+}
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+  .work__image-2 img {
+    content: url("../img/work/02-m.webp") !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
   .work__image-3 img {
     content: url("../img/work/03.png") !important;
     display: block;
   }
+}
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+  .work__image-3 img {
+    content: url("../img/work/03-m.webp") !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
   .review__container {
     position: relative;
     overflow: hidden;
@@ -528,10 +542,20 @@ a:hover {
   content: url("../img/work/02-light.webp");
   display: block;
 }
+@media (max-width: 768px) {
+  .work__image-2 img {
+    content: url("../img/work/02-light-m.webp");
+  }
+}
 
 .work__image-3 img {
   content: url("../img/work/03-light.png");
   display: block;
+}
+@media (max-width: 768px) {
+  .work__image-3 img {
+    content: url("../img/work/03-light-m.webp");
+  }
 }
 
 .horse {
@@ -1264,7 +1288,7 @@ a:hover {
     margin: 0;
   }
   .work__image-2 {
-    margin-right: -23px;
+    width: auto;
   }
 }
 .work__button {
