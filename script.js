@@ -1,5 +1,22 @@
 document.addEventListener('DOMContentLoaded',()=>{
 
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    } else {
+    document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+    }
+    function updateImages(theme) {
+    const images = document.querySelectorAll("img[data-light][data-dark]");
+    images.forEach(img => {
+        const newSrc = theme === "dark" ? img.dataset.dark : img.dataset.light;
+        img.src = newSrc;
+    });
+    }
+    const initialTheme = document.documentElement.getAttribute("data-theme");
+    updateImages(initialTheme);
+
     document.querySelectorAll('.menu-list-link').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -81,6 +98,24 @@ document.addEventListener('DOMContentLoaded',()=>{
         });
     });
 
+    const swiper = new Swiper(".how-work-swiper", {
+        spaceBetween: 20,
+        slidesPerView:3,
+        pagination: {
+            el: ".work-swiper-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            320: { slidesPerView: 1 },
+            490: { slidesPerView: 1.2 },
+            620: { slidesPerView: 1.5 , },
+            810: { slidesPerView: 2 },
+            992: { slidesPerView: 2.5 },
+            1263: { slidesPerView: 2.6 },
+            1300: { slidesPerView: 3 },
+        },
+    });
 
 
     let swiperWork = null
@@ -89,19 +124,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     function initSwipers() {
         const width = window.innerWidth
 
-        if (width <= 1024 && !swiperWork) {
-            swiperWork = new Swiper('.work__swiper', {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-                pagination: {
-                    el: '.work__pagination',
-                    clickable: true,
-                },
-            })
-        } else if (width > 1024 && swiperWork) {
-            swiperWork.destroy(true, true)
-            swiperWork = null
-        }
 
         if (width <= 768 && swiperPrimary.length === 0) {
             document.querySelectorAll('.primary__swiper').forEach(swiperEl => {

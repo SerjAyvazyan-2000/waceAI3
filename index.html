@@ -9,7 +9,10 @@
     <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
     
-    <!-- <link rel="stylesheet" href="css/swiper.css"> -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -322,7 +325,18 @@
                         </div>
                         <div class="possible__column possible__column-5 fade-left">
                             <div class="possible__image">
-                                <img src="img/possibilities/05-small1.webp" class="small small1" alt="img" width="" heigth="" loading="lazy">
+                                <div class="small small1">
+                                    <img
+                                        data-src="photo.webp"
+                                        loading="lazy"
+                                        src="img/possibilities/05-small1.webp"
+                                        data-light="img/possibilities/05-small1-l.webp"
+                                        data-dark="img/possibilities/05-small1.webp"
+                                        alt="photo"
+                                        />
+                                    <div class="block">Стеклянная ягода черники,
+как на моём референсе</div>
+                                </div>
                                 <img src="img/possibilities/05-small2.webp" class="small small2" alt="img" width="" heigth="" loading="lazy">
                                  <picture>
                                     <source srcset="img/possibilities/05-mobile.webp" media="(max-width: 576px)" />
@@ -348,34 +362,129 @@
                         <h2 class="work__title title">3 шага, <span class="span-1">чтобы начать работу</span> <span class="span-2">до старта</span></h2>
                         <p class="work__text text">Опишите задачу и наблюдайте, <br> как она воплощается в жизнь</p>
                     </div>
-                    <div class="work__swiper swiper fade-bottom">
+                     <div class="how-work-swiper swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide work__column">
+                            <div class="swiper-slide work-slide-1">
+                            <div class="work-slide G-flex-column">
+                                <div class="work-slide-info">
                                 <h3 class="work__subtitle subtitle"><img src="img/icons/work01.png" alt="img">Быстрая регистрация</h3>
                                 <p class="work__desc desc">Создайте аккаунт <span>за 30 секунд.</span> Никаких сложных форм</p>
-                                <div class="work__image work__image-1">
-                                    <img src="img/work/01.png" alt="img" width="" heigth="" loading="lazy">
+                                </div>
+
+                                <div class="work-slide-picture G-flex">
+                                <img
+                                    data-src="photo.webp"
+                                    loading="lazy"
+                                    src="img/workSlidePicture.webp"
+                                    data-light="img/workSlidePicture.webp"
+                                    data-dark="img/workSlidePicture-dark.webp"
+                                    alt="photo"
+                                />
+                                <div class="work__mockup">
+                                    <h2 class="work__title">Авторизация</h2>
+                                    <p class="work__text">Войдите в Wace AI <br> любым удобным способом</p>
+                                    <ul class="work__list">
+                                    <li class="work__item">
+                                        <img src="img/icons/yandex.png" alt="img" width="" heigth="" loading="lazy">
+                                        Продолжить с Яндекс
+                                    </li>
+                                    <li class="work__item">
+                                        <img src="img/icons/google.png" alt="img" width="" heigth="" loading="lazy">
+                                        Продолжить с Google
+                                    </li>
+                                    <li class="work__item">
+                                        <img
+                                        data-src="photo.webp"
+                                        loading="lazy"
+                                        src="img/icons/apple.png"
+                                        data-light="img/icons/apple-w.png"
+                                        data-dark="img/icons/apple.png"
+                                        alt="photo"
+                                        />
+                                        Продолжить с Apple
+                                    </li>
+                                    </ul>
+                                    <p class="work__or">или</p>
+                                    <label class="work__label">
+                                    <p class="work__label-title">С помощью e-mail</p>
+                                    <input type="email" placeholder="email@example.ru" class="work__input">
+                                    </label>
+                                    <button class="work__button">
+                                    <img src="img/icons/arrow-r.png" alt="img" width="" heigth="" loading="lazy">
+                                    Войти</button>
+                                </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide work__column work__column-reverse">
-                                <p class="work__desc desc">Напишите простыми словами, что нужно <span>создать или улучшить</span></p>
-                               <h3 class="work__subtitle subtitle"><img src="img/icons/work02.png" alt="img">Описание задачи</h3>
-                                <div class="work__image work__image-2">
-                                    <img src="img/work/02.png" alt="img" width="" heigth="" loading="lazy">
+                            </div>
+                            <div class="swiper-slide work-slide-2">
+                            <div class="work-slide-reverse G-flex-column">
+                                <div class="work-slide-reverse-picture G-flex">
+                                <img
+                                    data-src="photo.webp"
+                                    loading="lazy"
+                                    src="img/workSlidePicture2.webp"
+                                    data-light="img/workSlidePicture2.webp"
+                                    data-dark="img/workSlidePicture2-dark.webp"
+                                    alt="photo"
+                                />
+                                </div>
+                                <div class="work__mockup">
+                                    <div class="work__welcome">Доброго дня, хозяин!</div>
+                                <div class="work__block work__block-1">
+                                    <p>«Красивая девушка сидит за ноутбуком и работает как программист»</p>
+                                    
+                                </div>
+                                <div class="work__block work__block-2">
+                                    <p>«Кот-робот доставляет пиццу до дома хозяина, киберпанк, ультрареализм»</p>
+                                    
+                                </div>
+                                <div class="work__block work__block-3">
+                                    <p>«Три мужчины переодеты в современных богатырей, сидят на лошадях»</p>
+                                    
+                                </div>
+                                </div>
+                                
+                                <div class="work-slide-reverse-info">
+                                    <h3 class="work__subtitle subtitle"><img src="img/icons/work02.png" alt="img">Описание задачи</h3>
+                                <p class="work__desc desc">Напишите простыми словами, <br> что нужно <span>создать или улучшить</span></p>
+                               
                                 </div>
                             </div>
-                            <div class="swiper-slide work__column">
+                            </div>
+                            <div class="swiper-slide work-slide-3">
+                            <div class="work-slide G-flex-column">
+                                <div class="work-slide-info">
                                 <h3 class="work__subtitle subtitle"><img src="img/icons/work03.png" alt="img">Готовый результат</h3>
                                 <p class="work__desc work__desc-desktop desc" style="max-width: unset;">Контент готов к использованию. <br> <span>Сохраняйте картинку</span> и радуйтесь жизни!</p>
                                 <p class="work__desc work__desc-mobile desc" style="max-width: unset;">Контент готов к использованию. <br> <span>Копируйте текст</span> и радуйтесь жизни!</p>
-                                <div class="work__image work__image-3">
-                                    <img src="img/work/03.png" alt="img" width="" heigth="" loading="lazy">
                                 </div>
+
+                                <div class="work-slide-picture G-flex">
+                                <img
+                                    data-src="photo.webp"
+                                    loading="lazy"
+                                    src="img/workSlidePicture3.webp"
+                                    data-light="img/workSlidePicture3.webp"
+                                    data-dark="img/workSlidePicture3-dark.webp"
+                                    alt="photo"
+                                />
+                                <div class="work__mockup">
+                                    <div class="work__block">нарисуй танцующее приведение в очках на фоне фиолетового заката, реализм, эффект шума</div>
+                                    <div class="work__icon">
+                                        <img src="img/icons/copy.png" alt="img" width="" heigth="" loading="lazy">
+                                    </div>
+                                    <div class="work__image">
+                                    <img src="img/answer.webp" alt="img" width="" heigth="" loading="lazy">
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
                             </div>
                         </div>
-                        <div class="work__pagination"></div>
-                    </div>
-                    <a href="#" class="work__button btn-third btn">
+                        <div class="work-swiper-pagination swiper-pagination"></div>
+                        </div>
+                    <a href="#" class="work__btn btn-third btn">
                         <div class="arrow"></div>
                         Бесплатная регистрация
                     </a>
@@ -389,10 +498,51 @@
                         <p class="universal__text text">Нейросеть, работающая с изображениями <br> на профессиональном уровне</p>
                     </div>
                     <div class="universal__image fade-bottom">
-                        <picture>
-                            <source srcset="img/universal-mobile.webp" media="(max-width: 576px)" />
-                            <img src="img/universal.webp" alt="img" width="" heigth="" loading="lazy">
-                        </pictu>
+                            <!-- <picture>
+                                <source srcset="img/universal-mobile.webp" media="(max-width: 576px)" />
+                                <img src="img/universal.webp" alt="img" width="" heigth="" loading="lazy">
+                            </picture> -->
+                        <img
+                            data-src="photo.webp"
+                            loading="lazy"
+                            class="img-mobile"
+                            src="img/universal-mobile.webp"
+                            data-light="img/universal-mobile.webp"
+                            data-dark="img/universal-mobile.webp"
+                            alt="photo"
+                            />
+                         <img
+                            data-src="photo.webp"
+                            loading="lazy"
+                            class="img-desktop"
+                            src="img/universal.webp"
+                            data-light="img/universal-l.webp"
+                            data-dark="img/universal.webp"
+                            alt="photo"
+                            />
+                        <div class="universal__block">
+                            <div class="universal__plus">
+                                <img
+                                data-src="photo.webp"
+                                loading="lazy"
+                                src="img/icons/plus.png"
+                                data-light="img/icons/plus-w.png"
+                                data-dark="img/icons/plus.png"
+                                alt="photo"
+                              />
+                            </div>
+                            <p class="universal__text">Нарисуй меня на альпийском лугу в обнимку с этой собакой, 9х16 расширение</p>
+                            <div class="universal__send">
+                                <img
+                                data-src="photo.webp"
+                                loading="lazy"
+                                src="img/icons/send.png"
+                                data-light="img/icons/send-w.png"
+                                data-dark="img/icons/send.png"
+                                alt="photo"
+                              />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
